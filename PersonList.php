@@ -8,7 +8,7 @@ class PersonList
 
     public function __construct()
     {
-        $this->html = file_get_contents('html/list.html');
+        $this->html = file_get_contents('html/person/personList');
     }
 
     public function delete($param)
@@ -26,7 +26,7 @@ class PersonList
         try {
             $rows = '';
             foreach (Person::all() as $person) {
-                $row = file_get_contents('html/row.html');
+                $row = file_get_contents('html/person/personRow.html');
 
                 $row = str_replace(
                     [

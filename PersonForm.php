@@ -9,7 +9,7 @@ class PersonForm
 
     public function __construct()
     {
-        $this->html = file_get_contents('html/form.html');
+        $this->html = file_get_contents('html/person/personForm.html');
         $this->data = [
             'id' => null,
             'first_name' => null,
